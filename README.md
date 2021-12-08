@@ -1,5 +1,5 @@
 django-nested-inline-bug-fixed
-====================
+==============================
 
 Nested inline support for Django admin
 
