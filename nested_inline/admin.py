@@ -4,6 +4,7 @@ from django.contrib import admin
 from django.contrib.admin import helpers
 from django.contrib.admin.options import InlineModelAdmin, reverse
 from django.contrib.admin.utils import unquote
+from django.core.exceptions import FieldDoesNotExist
 from django.core.exceptions import PermissionDenied
 from django.db import models, transaction
 from django.forms.formsets import all_valid
@@ -215,7 +216,7 @@ class NestedModelAdmin(InlineInstancesMixin, admin.ModelAdmin):
             for k in initial:
                 try:
                     f = opts.get_field(k)
-                except models.FieldDoesNotExist:
+                except FieldDoesNotExist:
                     continue
                 if isinstance(f, models.ManyToManyField):
                     initial[k] = initial[k].split(",")

@@ -1,4 +1,4 @@
-django-nested-inline
+django-nested-inline-bug-fixed
 ====================
 
 Nested inline support for Django admin
@@ -8,13 +8,15 @@ Most of the code from this package is from [https://code.djangoproject.com/ticke
 Github
 ------
 
+[https://github.com/soex0101/django-nested-inline-bug-fixed](https://github.com/soex0101/django-nested-inline-bug-fixed)
+Forked from 
 [https://github.com/s-block/django-nested-inline](https://github.com/s-block/django-nested-inline)
 
 
 Installation
 ------------
 
-pip install django-nested-inline
+pip install django-nested-inline-bug-fixed
 
 
 Usage

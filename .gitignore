@@ -6,3 +6,4 @@
 .tox
 local_settings.py
 dist
+/.idea
